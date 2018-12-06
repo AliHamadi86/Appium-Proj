@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="All Desktop Tests">
+    <test name="All Desktop Tests">
+        <groups>
+            <run>
+                <include name="all-test"/>
+                <exclude name="open-defects"/>
+                 <exclude name="cc-errors"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="tests.*"/>
+        </packages>
+    </test>
+</suite>
